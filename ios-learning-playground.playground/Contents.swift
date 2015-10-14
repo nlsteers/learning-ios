@@ -2,7 +2,7 @@
 
 import UIKit
 
-//strings
+/*strings
 
 var str = "Hello, playground"
 
@@ -158,9 +158,119 @@ if username == "nlsteers" && password == "p4ssw0rd" {
 }
 
 
+//loops
 
 
 
+for var i = 1; i < 10; ++i{
+    
+    print(i)
+    
+}
+
+
+for var b = 2; b <= 20; b = b + 2{
+    print(b)
+}
+
+
+var arr = [8,3,9,91]
+
+for (index, value) in arr.enumerate(){
+    arr[index] = value + 1
+}
+
+print(arr)
+
+
+
+for x in arr {
+    print(x)
+}
+
+
+
+
+var arr1:[Double] = [10,20,30]
+
+for (index, value) in arr1.enumerate(){
+    arr1[index] = value / 2
+}
+
+print(arr1)
+
+
+//while loop
+
+var i = 1
+
+while i < 10 {
+    print(i)
+    i++
+}
+
+
+
+var q = 5
+
+while q <= 50{
+    print(q)
+    q = q + 5
+}
+
+
+var arr2 = [1,2,3,4,5,6,7]
+
+i = 0
+
+while i < arr2.count {
+    
+    arr2[i] = arr2[i] - 2
+    i++
+}
+
+
+print(arr2)
+*/
+
+
+//Is it a prime number? 
+
+
+var primeCheck:Int = 1
+
+var prime = true
+
+if primeCheck == 1 {
+    prime = false
+}
+
+for var i = 2; i < primeCheck; ++i{
+    if primeCheck % i == 0 {
+        prime = false
+        break
+    }
+}
+
+if prime == false {
+    print("\(primeCheck) is not Prime")
+}
+
+if prime == true {
+    print("\(primeCheck) is Prime")
+}
+
+
+
+
+
+var i = 1
+while i <= 6 {
+    if i > 4 {
+        print(3*i)
+    }
+    i++
+}
 
 
 
