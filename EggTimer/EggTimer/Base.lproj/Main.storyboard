@@ -8,7 +8,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -22,6 +21,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Qf0-G3-N4P"/>
                                     <constraint firstAttribute="height" constant="44" id="TUh-eP-kog"/>
                                 </constraints>
                                 <items>
@@ -33,11 +33,42 @@
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qf0-G3-N4P"/>
+                                        <exclude reference="TUh-eP-kog"/>
+                                    </mask>
+                                </variation>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qm-Gx-gHZ">
+                                <rect key="frame" x="262" y="237" width="75" height="126"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="E1y-DJ-JZ2"/>
+                                    <constraint firstAttribute="height" constant="212" id="LIG-5S-tUL"/>
+                                    <constraint firstAttribute="height" constant="126" id="N7h-TA-RGH"/>
+                                    <constraint firstAttribute="height" constant="212" id="UGP-d8-g3D"/>
+                                    <constraint firstAttribute="height" constant="126" id="xTA-j5-Lp5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="E1y-DJ-JZ2"/>
+                                        <exclude reference="LIG-5S-tUL"/>
+                                        <exclude reference="N7h-TA-RGH"/>
+                                        <exclude reference="UGP-d8-g3D"/>
+                                        <exclude reference="xTA-j5-Lp5"/>
+                                    </mask>
+                                </variation>
+                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUu-14-PC4">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KnT-rC-cuG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Y8v-0o-Jo6"/>
                                     <constraint firstAttribute="height" constant="44" id="u06-e7-kmp"/>
                                 </constraints>
                                 <items>
@@ -53,36 +84,89 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KnT-rC-cuG"/>
+                                        <exclude reference="Y8v-0o-Jo6"/>
+                                        <exclude reference="u06-e7-kmp"/>
+                                    </mask>
+                                </variation>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qm-Gx-gHZ">
-                                <rect key="frame" x="177" y="194" width="246" height="212"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sq-tt-jfc">
+                                <rect key="frame" x="377" y="289" width="54" height="21"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="212" id="UGP-d8-g3D"/>
+                                    <constraint firstAttribute="height" constant="21" id="19m-Ve-3DS"/>
+                                    <constraint firstAttribute="height" constant="21" id="V2F-yX-Mb0"/>
+                                    <constraint firstAttribute="height" constant="21" id="iv2-47-c6d"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="19m-Ve-3DS"/>
+                                        <exclude reference="V2F-yX-Mb0"/>
+                                        <exclude reference="iv2-47-c6d"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ls-ES-nzX"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1IN-lH-L2D"/>
                             <constraint firstItem="AFJ-hN-kRi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7wf-RX-Ohc"/>
-                            <constraint firstItem="zUu-14-PC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="I4G-kz-R0A"/>
-                            <constraint firstItem="zUu-14-PC4" firstAttribute="top" secondItem="2qm-Gx-gHZ" secondAttribute="bottom" constant="150" id="MJl-e6-TXL"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zUu-14-PC4" secondAttribute="bottom" id="P6g-Xo-z0w"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CVg-ST-NHb"/>
+                            <constraint firstItem="2qm-Gx-gHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HyQ-Ga-gbi"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0K-vt-IdX"/>
+                            <constraint firstItem="9sq-tt-jfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="40" id="JFz-rx-Tan"/>
+                            <constraint firstItem="2qm-Gx-gHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGK-Cu-Hxc"/>
+                            <constraint firstItem="9sq-tt-jfc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RWV-Bv-ZHW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zUu-14-PC4" secondAttribute="bottom" id="SQr-hh-dRa"/>
+                            <constraint firstItem="9sq-tt-jfc" firstAttribute="top" secondItem="AFJ-hN-kRi" secondAttribute="bottom" constant="225" id="TnL-Y3-W7n"/>
                             <constraint firstItem="AFJ-hN-kRi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="W23-BC-q2T"/>
-                            <constraint firstItem="2qm-Gx-gHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XMl-LK-rfk"/>
-                            <constraint firstItem="2qm-Gx-gHZ" firstAttribute="top" secondItem="AFJ-hN-kRi" secondAttribute="bottom" constant="130" id="YpI-uW-1QG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zUu-14-PC4" secondAttribute="trailing" constant="-20" id="dbx-8Z-k08"/>
+                            <constraint firstItem="2qm-Gx-gHZ" firstAttribute="top" secondItem="AFJ-hN-kRi" secondAttribute="bottom" constant="173" id="XkF-7h-LUN"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d3j-iA-vsD"/>
+                            <constraint firstItem="9sq-tt-jfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="drp-rd-Xkc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AFJ-hN-kRi" secondAttribute="trailing" constant="-20" id="fIw-qP-RBt"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPj-1Z-pEx"/>
+                            <constraint firstItem="zUu-14-PC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyV-la-XWj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AFJ-hN-kRi" secondAttribute="trailing" constant="-20" id="htE-jg-Ywq"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="mvf-rI-tvC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zUu-14-PC4" secondAttribute="trailing" constant="-20" id="nLU-NB-mVd"/>
+                            <constraint firstItem="zUu-14-PC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="pEb-ry-daG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AFJ-hN-kRi" secondAttribute="trailing" constant="-20" id="rQ2-xU-XyD"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vwc-SE-ztn"/>
+                            <constraint firstItem="AFJ-hN-kRi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yBM-IH-3ap"/>
+                            <constraint firstItem="2qm-Gx-gHZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yu7-z2-jD1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7wf-RX-Ohc"/>
+                                <exclude reference="CVg-ST-NHb"/>
+                                <exclude reference="J0K-vt-IdX"/>
+                                <exclude reference="W23-BC-q2T"/>
+                                <exclude reference="d3j-iA-vsD"/>
+                                <exclude reference="fIw-qP-RBt"/>
+                                <exclude reference="fPj-1Z-pEx"/>
+                                <exclude reference="mvf-rI-tvC"/>
+                                <exclude reference="rQ2-xU-XyD"/>
+                                <exclude reference="yBM-IH-3ap"/>
+                                <exclude reference="NGK-Cu-Hxc"/>
+                                <exclude reference="XkF-7h-LUN"/>
+                                <exclude reference="JFz-rx-Tan"/>
+                                <exclude reference="TnL-Y3-W7n"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="timerTenthView" destination="9sq-tt-jfc" id="KaN-dD-n9m"/>
                         <outlet property="timerView" destination="2qm-Gx-gHZ" id="rqn-AF-vVf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244" y="385"/>
         </scene>
