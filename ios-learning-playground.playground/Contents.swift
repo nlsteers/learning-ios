@@ -231,7 +231,6 @@ while i < arr2.count {
 
 
 print(arr2)
-*/
 
 
 //Is it a prime number? 
@@ -272,7 +271,7 @@ while i <= 6 {
     i++
 }
 
-
+*/
 
 
 

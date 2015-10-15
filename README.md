@@ -8,3 +8,4 @@ Projects Completed:
 - Cat Age App
 - Number Guessing Game
 - Prime Checker
+- Egg Timer
